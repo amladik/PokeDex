@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pokedexentry">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="402dp"
+                android:layout_height="252dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iconic"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:color/holo_blue_bright" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="375dp"
+                android:layout_height="219dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iconic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/iconic"
+                app:srcCompat="@color/common_google_signin_btn_text_dark_focused" />
+
+            <ImageView
+                android:id="@+id/iconic"
+                android:layout_width="248dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="256dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/iconic"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="@+id/iconic"
+                app:layout_constraintTop_toBottomOf="@+id/iconic" />
+
+            <LinearLayout
+                android:id="@+id/genInfoLayout"
+                android:layout_width="307dp"
+                android:layout_height="316dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/name"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name">
+
+                <LinearLayout
+                    android:layout_width="143dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="142dp" />
+
+                    <TextView
+                        android:id="@+id/weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/index"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="142dp" />
+
+                    <TextView
+                        android:id="@+id/ability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/genInfoLayout"
+                app:layout_constraintStart_toStartOf="@+id/genInfoLayout"
+                app:layout_constraintTop_toBottomOf="@+id/genInfoLayout" />
+
+            <ImageView
+                android:id="@+id/typepicture"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="@+id/type"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="@+id/type"
+                app:layout_constraintTop_toBottomOf="@+id/type" />
+
+            <LinearLayout
+                android:id="@+id/statsInfo"
+                android:layout_width="308dp"
+                android:layout_height="277dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/typepicture"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="@+id/typepicture"
+                app:layout_constraintTop_toBottomOf="@+id/typepicture">
+
+                <LinearLayout
+                    android:layout_width="154dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/hp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="22sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp" />
+
+                    <TextView
+                        android:id="@+id/attack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/speed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="22sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp" />
+
+                    <TextView
+                        android:id="@+id/defense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

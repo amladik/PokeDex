@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firebasetextrecognition">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".viewSavedTeam"></activity>
+        <activity android:name=".myTeams">
+
+        </activity>
+        <activity android:name=".listforteam" />
+        <activity android:name=".allPokemon" />
+        <activity android:name=".team"></activity>
+        <activity android:name=".pokedexentry" />
+        <activity
+            android:name=".pokeindex"
+            android:label="@string/title_activity_pokeindex"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".titleScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pokeList" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
