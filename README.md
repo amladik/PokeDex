@@ -8,3 +8,8 @@ A pokedex designed to accompany the pokemon trading card game - when scanning a 
 4) Firebase ML Kit (Text Recognition)
 5) Saving data using internal/external file storage
 6) Saving using Shared Preferences
+
+# What I Used
+1) Android Studio - Java
+2) Firebase Database
+3) Firebase ML Kit
